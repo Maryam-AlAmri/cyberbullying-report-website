@@ -1,0 +1,115 @@
+:root {
+  --green: #53C289;
+  --beige: #FCF8E8;
+}
+* {
+  box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes Move{
+  0%{
+    transform: translate(50px,0);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+/* Start Header Css */
+  
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.header li {
+  float: left; 
+}
+  
+.header li a {
+  display: block;
+  color: var(--green);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+  
+.header li a:hover {
+  background-color: var(--green);
+  color: white;
+  border-radius: 20px;
+}
+/* End Header Css */
+/* Body Code Start Here */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  animation: Move 2s ease 1;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.name:hover{
+  color: var(--green);
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: var(--green);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  padding: 6px;
+}
+
+button:hover, a:hover {
+  color: var(--green);
+}
+/* Body Code End Here */
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 3%;
+}
+
+/* Style the footer */
+footer {
+  background-color: var(--green);
+  width: 100%;
+  height: 50px;
+  height: 50px;
+  color: white;
+  text-align-last: center;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0
+}

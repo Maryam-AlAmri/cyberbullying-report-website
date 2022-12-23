@@ -1,0 +1,178 @@
+:root {
+  --green: #53C289;
+  --beige: #FCF8E8;
+}
+
+@keyframes Move{
+  0%{
+    transform: translate(50px,0);
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin:5%;
+  padding: 5%;
+  padding-bottom: 0%;
+  text-align: center;
+  font-family: arial;
+  animation: Move 2s ease 1;
+  }
+  
+  .title{
+    color: var(--green);
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: var(--green);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 1s ease;
+  }
+ 
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  button:hover, a:hover {
+    color: white;
+    
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+.explain{
+  color: cadetblue;
+  }
+  /* For Chatbot */
+  /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  /* background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px; */
+   border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    opacity: 0.8;
+    opacity: 0.8;
+    position: fixed;
+    padding: 16px 20px;
+    bottom: 50px;
+    right: 28px;
+    transition: all 1s ease;
+    width: 50%;
+    height: 50%;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: var(--green);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width:100%;
+  margin-bottom:10px;
+  opacity: 0.6;
+  transition: all 1s ease;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: darkred;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* End Chatbot */
+

@@ -1,0 +1,87 @@
+:root {
+    --green: #53C289;
+    --beige: #FCF8E8;
+  }
+  
+  @keyframes Move{
+    0%{
+      transform: translate(50px,0);
+    }
+    100%{
+      transform: translate(0,0);
+    }
+  }
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 100%;
+      height: 100%;
+      margin:5%;
+      padding: 5%;
+      padding-bottom: 0%;
+      text-align: center;
+      font-family: arial;
+      animation: Move 2s ease 1;
+    }
+    
+    .title{
+      color: var(--green);
+    }
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+  
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: var(--green);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 20px;
+      transition: all 1s ease;
+    }
+   
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  
+    button:hover, a:hover {
+      color: white;
+      
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+  
+  .explain{
+    color: cadetblue;
+    }
+
+

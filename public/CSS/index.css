@@ -1,0 +1,130 @@
+:root {
+    --green: #53C289;
+    --beige: #FCF8E8;
+  }
+  * {
+    box-sizing: border-box;
+  }
+    
+  body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Start Header Css */
+    
+  .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .header li {
+    float: left; 
+  }
+    
+  .header li a {
+    display: block;
+    color: var(--green);
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+    
+  .header li a:hover {
+    background-color: var(--green);
+    color: white;
+    border-radius: 20px;
+  }
+  /* End Header Css */
+  /* Body Css Start here */
+  img{
+    width: 45rem;
+    padding-left: 15px;
+  }
+  
+  .box{
+    background-color: var(--green);
+    border-radius: 50px;
+    width: 40rem;
+    height: 30rem;
+    text-align-last: left;
+    padding-top: 10%;
+    padding-left: 10%;
+    animation: Move 2s ease 1;
+    margin-left: 30%;
+  }
+  
+  @keyframes Move{
+    0%{
+      transform: translate(50px,0);
+    }
+    100%{
+      transform: translate(0,0);
+    }
+  }
+  
+  .title{
+    color: black;
+    font-family: fantasy;
+    font-size: 60px;
+    
+    animation: Move 3s ease 1;
+  }
+  
+  .slogan{
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    animation: Move 5s ease 1;
+  }
+  
+  .button {
+    background-color: var(--green);
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 13rem;
+    margin-top: 4rem;
+    align-content: center;
+    transition: all 1s ease;
+    animation: Move 5s ease 1;
+  }
+  
+  .button:hover{
+    color: var(--green);
+    transform: perspective(100px);
+    background-color: white;
+  }
+  
+  
+  
+  /* Body Css End here */
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+  }
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 3%;
+  }
+  /* Style the footer */
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    }
+    

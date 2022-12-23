@@ -1,0 +1,28 @@
+:root {
+    --green: #53C289;
+    --beige: #FCF8E8;
+  }
+  h1{
+    color:var(--green);
+    text-align: center;
+    padding-bottom: 10px;
+    width: 700;
+    font-size: 50px;
+}
+h3{
+  text-align: center;
+
+}
+.buttom{
+    width: 100%;
+    background-color:  var(--green);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 70%;
+    transition: all 1s ease;
+
+}
